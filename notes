@@ -1,0 +1,42 @@
+Ref video: https://www.youtube.com/watch?v=eIrMbAQSU34
+
+- FAQs on various java versions, new features etc: https://chatgpt.com/share/67a35e9c-c2bc-800e-b8c6-049fbb6bb676
+
+- when a function belongs to a class, its called a method
+- PascalNamingConvention, camelCaseConvention
+- 'package' is like a folder which holds classes.
+- classes are by default accessible within the package, if we want to access the class outside the package, we will have to give 'public' access specifier to that class e.g. 'public class Animal'
+- 'extends' keyword is used for extending classes whereas 'implements' keyword is used for implementing interfaces.
+- we always terminate the statement with ';' in java
+- source code(.java) -> java compiler -> byte code(.class) -> JVM(java virtual machine) -> native/machine code (windows, linux, mac etc)
+- C#, Python also has the same architecture
+
+- String are immutable types in java
+- String book = "book" stores in String pool inside JVM memory.
+- String anotherBook = "book" will also refer to the same String pool which is created previously for "book"
+- If that memory is not used, it will be picked by the Garbage collector and will free the memory.
+- as String are immutable, each method in String class gives a new String rather than modifying the existing one.
+- e.g. `replace("first", "third")` will return a new String
+
+- FAQs on immutable strings, garbage collection, referencing, named params, etc: https://chatgpt.com/share/67a34fa0-27fc-800e-80c5-84dcd553679e
+
+- we can use special characters in String by prefixing the characters with '\' e.g. "Hello \"Parth\"" -> Hello "Parth"
+- '\n' -> new line, '\t' -> tab
+
+- int[] are integer arrays in java and have fixed length.
+- these are similar to arrays in C++
+- e.g. int[] numbers = {1,2,3,4,5};
+- for sorting arrays: Arrays.sort(numbers)
+
+- variables in java are by default mutable.
+- we have Record for storing data (similar to case classes in Scala)
+- we should probably use Record in our production level java application
+
+- implicit casting, lower size types can be implicitly converted to higher size types.
+- byte -> short -> int -> long -> float -> double
+- explicitly casting is done by prefixing the variable with the data type to be casted. e.g. int intVariable = (double)doubleVariable + 2;
+- casting can only happen with compatible types. e.g. int -> double, double -> int etc
+- in order to cast non-compatible types, we can use wrapper classes: Integer, Short, Float etc
+- e.g.
+    String str = "123";
+    int num = Integer.parseInt(str);
