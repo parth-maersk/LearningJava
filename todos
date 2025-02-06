@@ -1,0 +1,20 @@
+
+Java
+    - Java basics
+    - OOPs in Java
+    - Java 8+ features
+    - Scala features in Java:
+        - case classes
+        - Option
+        - Error handling
+        - Pattern matching
+        - Functional programming (Higher order functions: map, flatMap, forEach)
+        - Asynchronous programming (Futures)
+    - working with Json in Java
+
+Spring boot
+    - Basics
+    - Dependency injection
+    - Write a simple api
+    - connect PostgreSQL
+    - write a little complex api using PostgreSQL
