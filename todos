@@ -1,12 +1,13 @@
 
 Java
-    - Java basics
+    - Java basics [done]
+    - Java Collections [done]
     - OOPs in Java
     - Java 8+ features
     - Scala features in Java:
-        - case classes
+        - case classes, sealed trait, object
         - Option
-        - Error handling
+        - Error handling (Try monad)
         - Pattern matching
         - Functional programming (Higher order functions: map, flatMap, forEach)
         - Asynchronous programming (Futures)
