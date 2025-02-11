@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("blah");
         Animal dog = new Animal();
         dog.age = 15;
         dog.breed = "german";
@@ -35,11 +36,11 @@ public class Main {
         System.out.println(num);
 
         // FizzBuzz
-        Scanner scanner = new Scanner(System.in);
-        int fizzBuzzNum = scanner.nextInt();
-
-        boolean isDivisibleBy5 = fizzBuzzNum % 5 == 0;
-        boolean isDivisibleBy3 = fizzBuzzNum % 3 == 0;
+//        Scanner scanner = new Scanner(System.in);
+//        int fizzBuzzNum = scanner.nextInt();
+//
+//        boolean isDivisibleBy5 = fizzBuzzNum % 5 == 0;
+//        boolean isDivisibleBy3 = fizzBuzzNum % 3 == 0;
 
         // Java doesn't support switch statements for multiple variables
 //        switch (isDivisibleBy3, isDivisibleBy5) {
@@ -48,8 +49,9 @@ public class Main {
 //
 //        }
 
-        String numberStr = "12345";
+        String numberStr = "123456";
         int number = Integer.parseInt(numberStr);
+        System.out.print("printing number: ");
         System.out.println(number);
 
     }
